@@ -31,7 +31,7 @@ function App() {
       {isLoading ? (
         <p className="bg-gradient-to-r from-blue-600 via-green-500 to-indigo-400  text-transparent bg-clip-text text-4xl text-center  mt-32 font-bold">Loading...</p>
       ) : (
-        <div className="grid lg:grid-cols-3 md:grid-cols-3 grid-cols-1 gap-4 ">
+        <div className="grid grid-cols-1 lg:grid-cols-3 md:grid-cols-3  gap-4 ">
           {images.map((image) => (
             <ImageCard key={image.id} image={image} />
           ))}
